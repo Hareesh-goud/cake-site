@@ -9,7 +9,7 @@ pipeline {
         SCANNER_HOME = tool 'sonar-scanner'
         DOCKER_REGISTRY = 'docker.io'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
-        IMAGE_NAME = 'govindhan1234/cake-site-2'
+        IMAGE_NAME = 'govindhan1234/cake-site-1'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
 
