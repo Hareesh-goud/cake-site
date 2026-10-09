@@ -143,7 +143,7 @@ pipeline {
 
                 sh """
                     docker run \
-                    -d -p 80:80 --name cake  ${DOCKER_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} 
+                    -d -p 80:80 --name cake1  ${DOCKER_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} 
                 """
             }
         }
