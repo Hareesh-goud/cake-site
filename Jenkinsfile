@@ -136,6 +136,18 @@ pipeline {
                 }
             }
         }
+
+        stage('Docker RUN') {
+            steps {
+                echo 'Building Docker Container...'
+
+                sh """
+                    docker run \
+                    -d -p 80:80 --name cake  ${DOCKER_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} 
+                """
+            }
+        }
+
     }
 
     post {
