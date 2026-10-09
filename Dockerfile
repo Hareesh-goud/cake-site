@@ -9,5 +9,5 @@ run npm run build
 # production stage
 from nginx:alpine
 copy --from=build /app/build /usr/share/nginx/html
-expose 1234
+expose 80
 cmd ["nginx", "-g", "daemon off;"]
