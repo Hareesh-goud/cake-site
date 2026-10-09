@@ -10,7 +10,7 @@ pipeline {
         DOCKER_REGISTRY = 'docker.io'
         DOCKER_CREDENTIALS_ID = 'docker-hub'
         IMAGE_NAME = 'harishgoud136/cake-site'
-        IMAGE_TAG = "version-200"
+        IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
 
     stages {
